@@ -94,13 +94,13 @@ export default () => {
         <View style={styles.tombol}>
           <TouchableOpacity onPress={() => handleDone(item[0], item[1])}>
             <View style={[styles.actionIcon, { backgroundColor: "green" }]}>
-              <Icon name="done" size={20} color="white" />
+              <Icon name="done" size={25} color="white" />
             </View>
           </TouchableOpacity>
           <View style={{ flexDirection: "row", alignItems: "center" }}>
             <TouchableOpacity onPress={() => handleDelete(item[0])}>
               <View style={styles.actionIcon}>
-                <Icon name="delete" size={20} color="white" />
+                <Icon name="delete" size={25} color="white" />
               </View>
             </TouchableOpacity>
           </View>
@@ -126,7 +126,7 @@ export default () => {
         >
           SAN TODO APP
         </Text>
-        <Icon name="delete" size={25} color="red" onPress={clearAllTodos} />
+        <Icon name="delete" size={30} color="red" onPress={clearAllTodos} />
       </View>
 
       {listTodo && (
